@@ -1,6 +1,7 @@
 $color-primary: #29b3f38a;
 $color-secondary: #28b4578f;
 $color-gray: #777;
+$color-light: #fff;
 
 *,
 *::after,
@@ -42,7 +43,7 @@ code {
       $color-primary,
       $color-secondary
     ),
-    url(../Images/bgimage.jpg);
+    url(../src/Images/bgimage.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -74,7 +75,7 @@ code {
 }
 
 .heading-primary {
-  color: #fff;
+  color: $color-light;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 4rem;
@@ -103,8 +104,8 @@ code {
 }
 
 .btn-white {
-  color: #777;
-  background-color: #fff;
+  color: $color-gray;
+  background-color: $color-light;
   border-radius: 10rem;
   padding: 1.5rem 4rem;
   display: inline-block;
@@ -146,7 +147,7 @@ code {
 }
 
 .btn-white::after {
-  background-color: #fff;
+  background-color: $color-light;
 }
 
 .btn:hover::after {
