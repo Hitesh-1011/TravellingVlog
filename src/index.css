@@ -147,8 +147,8 @@ code {
 }
 
 .btn-animated {
-  animation: moveInBottom 0.5s ease-out 0.75s;
-  animation-fill-mode: backwards;
+  animation: moveInBottom 0.5s ease-out 0.75s !important;
+  animation-fill-mode: backwards !important;
 }
 
 @keyframes moveInLeft {
