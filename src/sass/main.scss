@@ -1,39 +1,14 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
 @import "base/base";
 @import "base/animations";
 @import "base/typography";
 @import "base/utilities";
 
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/variables";
-
-@import "pages/home";
-
 @import "components/buttons";
 
-.heading-primary {
-  color: $color-light;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 4rem;
-  &-main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    /* animation-iteration-count: 3; */
-    /* animation-delay: 2s; */
-  }
-  &-sub {
-    display: block;
-    font-size: 1.6rem;
-    font-weight: 400;
-    letter-spacing: 1.7rem;
-    animation-name: moveInRight;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-  }
-}
+@import "layout/header";
+
+@import "pages/home";
