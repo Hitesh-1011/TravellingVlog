@@ -4,8 +4,29 @@ import img from "../src/Images/logo1.png";
 import abtimg1 from "../src/Images/bgimage2.jpg";
 import abtimg2 from "../src/Images/bgimage3.jpg";
 import abtimg3 from "../src/Images/bgimage4.jpg";
+import { useEffect, useState } from "react";
 
 function App() {
+  // const [isLoaded, setIsLoaded] = useState(false);
+  // const [error, setError] = useState();
+  // const [items, setItems] = useState();
+  // useEffect(() => {
+  //   fetch(
+  //     "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=3fd2be6f0c70a2a598f084ddfb75487c&page="
+  //   )
+  //     .then((res) => res.json())
+  //     .then(
+  //       (result) => {
+  //         setIsLoaded(true);
+  //         setItems(result);
+  //       },
+  //       (error) => {
+  //         setIsLoaded(true);
+  //         setError(error);
+  //       }
+  //     );
+  // }, []);
+  // console.log("items", items.results);
   return (
     <>
       <header className="header">
@@ -71,6 +92,20 @@ function App() {
                   alt="mountainviews"
                   className="composition__photo composition__photo--p3"
                 />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="section-features">
+          <div className="row">
+            <div className="col-1-of-4">
+              <div className="feature-box">
+                <i className="feature-box__icon icon-basic-world"></i>
+                <h3 className="heading-tertiary">Explore the world</h3>
+                <p className="feature-box__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
               </div>
             </div>
           </div>
