@@ -10,6 +10,17 @@
     }
   }
 
+  &--green {
+    color: $color-light;
+    background-color: $color-primary;
+    border-radius: 10rem;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -49,7 +60,7 @@
     z-index: -1;
     transition: all 0.4s;
   }
-  
+
   &--animated {
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;
