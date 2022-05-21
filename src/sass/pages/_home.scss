@@ -4,7 +4,19 @@
   margin-top: -20vh;
 }
 
-.section-features{
+.section-features {
   padding: 20rem 0;
-  
+  margin-top: -8rem;
+  background-image: linear-gradient(
+      to right bottom,
+      $color-primary,
+      $color-secondary
+    ),
+    url(../src/Images/bgimage.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
 }

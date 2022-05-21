@@ -4,6 +4,7 @@ import img from "../src/Images/logo1.png";
 import abtimg1 from "../src/Images/bgimage2.jpg";
 import abtimg2 from "../src/Images/bgimage3.jpg";
 import abtimg3 from "../src/Images/bgimage4.jpg";
+import icon from "./icon-font.css";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -101,13 +102,58 @@ function App() {
             <div className="col-1-of-4">
               <div className="feature-box">
                 <i className="feature-box__icon icon-basic-world"></i>
-                <h3 className="heading-tertiary">Explore the world</h3>
+                <h3 className="heading-tertiary u-margin-bottom-small">
+                  Explore the world
+                </h3>
                 <p className="feature-box__text">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
               </div>
             </div>
+            <div className="col-1-of-4">
+              <div className="feature-box">
+                <i className="feature-box__icon icon-basic-compass"></i>
+                <h3 className="heading-tertiary u-margin-bottom-small">
+                  Meet Nature
+                </h3>
+                <p className="feature-box__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+            </div>
+            <div className="col-1-of-4">
+              <div className="feature-box">
+                <i className="feature-box__icon icon-basic-map"></i>
+                <h3 className="heading-tertiary u-margin-bottom-small">
+                  Find your way
+                </h3>
+                <p className="feature-box__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+            </div>
+            <div className="col-1-of-4">
+              <div className="feature-box">
+                <i className="feature-box__icon icon-basic-heart"></i>
+                <h3 className="heading-tertiary u-margin-bottom-small">
+                  Live a healthier life
+                </h3>
+                <p className="feature-box__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="section-tours">
+          <div className="u-center-text u-margin-bottom-big">
+            <h2 className="heading-secondary">
+              Exciting tours for adventure people
+            </h2>
           </div>
         </section>
       </main>
