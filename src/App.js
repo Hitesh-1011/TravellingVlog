@@ -30,6 +30,7 @@ function App() {
   // console.log("items", items.results);
   return (
     <>
+      {/* header section */}
       <header className="header">
         <div className="header__logo-box">
           <img src={img} alt="tigerlogo" className="header__logo" />
@@ -46,8 +47,9 @@ function App() {
           </a>
         </div>
       </header>
-
+      {/* section starts */}
       <main>
+        {/* First section */}
         <section className="section-about">
           <div className="u-center-text u-margin-bottom-big">
             <h2 className="heading-secondary">
@@ -97,6 +99,8 @@ function App() {
             </div>
           </div>
         </section>
+
+        {/* Second section */}
         <section className="section-features">
           <div className="row">
             <div className="col-1-of-4">
@@ -149,6 +153,8 @@ function App() {
             </div>
           </div>
         </section>
+
+        {/* Third section */}
         <section className="section-tours">
           <div className="u-center-text u-margin-bottom-big">
             <h2 className="heading-secondary">Most Popular tours</h2>
@@ -255,6 +261,18 @@ function App() {
             <a href="#" className="btn btn--green">
               Discover all tours
             </a>
+          </div>
+        </section>
+
+        {/* Fourth section */}
+        <section className="section-stories">
+          <div className="u-center-text u-margin-bottom-big">
+            <h2 className="heading-secondary">
+              We make people genuinely happy
+            </h2>
+          </div>
+          <div className="row">
+            <div className="story">Text</div>
           </div>
         </section>
       </main>
