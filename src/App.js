@@ -4,6 +4,8 @@ import img from "../src/Images/logo1.png";
 import abtimg1 from "../src/Images/bgimage2.jpg";
 import abtimg2 from "../src/Images/bgimage3.jpg";
 import abtimg3 from "../src/Images/bgimage4.jpg";
+import bgVideo from "../src/Images/video.mp4";
+import boatrowing from "../src/Images/boatrowing.jpg";
 import icon from "./icon-font.css";
 import { useEffect, useState } from "react";
 
@@ -266,13 +268,64 @@ function App() {
 
         {/* Fourth section */}
         <section className="section-stories">
+          <div className="bg-video">
+            <video
+              src={bgVideo}
+              className="bg-video__content"
+              autoPlay
+              muted
+              loop
+            ></video>
+          </div>
           <div className="u-center-text u-margin-bottom-big">
             <h2 className="heading-secondary">
               We make people genuinely happy
             </h2>
           </div>
           <div className="row">
-            <div className="story">Text</div>
+            <div className="story">
+              <div className="story__shape">
+                <img src={boatrowing} className="story__image" />
+                <div className="story__caption">Mary Smith</div>
+              </div>
+              <div className="story__text">
+                <h3 className="heading-teritary u-margin-bottom-small">
+                  I have the best week ever with my family
+                </h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley.Lorem Ipsum is simply dummy text of the
+                  printing and typesetting industry.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="story">
+              <div className="story__shape">
+                <img src={boatrowing} className="story__image" />
+                <div className="story__caption">Jack Wilson</div>
+              </div>
+              <div className="story__text">
+                <h3 className="heading-teritary u-margin-bottom-small">
+                  WOW! My life is completely different now
+                </h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley.Lorem Ipsum is simply dummy text of the
+                  printing and typesetting industry.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="u-center-text u-margin-top-huge">
+            <a href="#" className="btn btn-text">
+              Read all stories &rarr;
+            </a>
           </div>
         </section>
       </main>
